@@ -1,0 +1,15 @@
+.cabecera{
+  background-color: #1c8cb5;
+  height: 14%;
+}
+.cabecera-formulario {
+  background-color:#1c8cb5;
+  height: 40px;
+  padding: 5;
+  margin-bottom: 14px;
+}
+.cabecera-formulario p{
+  text-align:center;
+  font-size: 20px;
+  color: ivory;
+}

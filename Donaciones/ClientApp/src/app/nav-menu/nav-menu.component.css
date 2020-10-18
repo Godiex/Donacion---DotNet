@@ -1,0 +1,102 @@
+.sidebar {
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #0278ae;
+  transition: all .5s ease;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  top: 50px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sidebar header {
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #FFFF;
+  height: 200px;
+  background: #0278ae;
+  user-select: none;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: #FFFF;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+  transition: .4s;
+}
+
+ul li:hover a {
+  padding-left: 70px;
+  text-decoration: none;
+  background: #1c8cb5;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+#check {
+  display: none;
+}
+
+label #btn, label #cancel {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+label #btn {
+  top: 0; position: fixed;
+  background: #0278ae;
+  left: 20px;
+  top: 70px;
+  font-size: 35px;
+  color: #FFFF;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+
+label #cancel {
+  top: 0; position: fixed;
+  background: #FFFF;
+  z-index: 1111;
+  left: -195px;
+  top: 30px;
+  font-size: 30px;
+  color:#0278ae;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+  left: 192px;
+}

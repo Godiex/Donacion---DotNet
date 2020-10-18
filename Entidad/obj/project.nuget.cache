@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZO7m+TATCU4kkJAmmCmfRK9nX50C0Ps8ZoL3x8s/0iihR6/DOAlVr278hDj6EZjAfE3FMbZOBbUTZlXRM88aqg==",
+  "success": true,
+  "projectFilePath": "D:\\Descargas\\Programacion\\Visual Code\\Practicas\\Donaciones - Ado.Net\\Entidad\\Entidad.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\spayd\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\spayd\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

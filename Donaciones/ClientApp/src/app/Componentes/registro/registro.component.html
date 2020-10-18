@@ -1,0 +1,63 @@
+<div class="container ">
+  <div class="jumbotron ditancia-jumbotrom">
+      <section class="main row">
+          <div  class="col-md-2"></div>
+          <article class="col-md-8">
+              <div class="card">
+                  <div class="card-body">
+                      <h2>{{fecha | date }}</h2>
+                      <div class="cabecera-formulario">
+                          <p>Registro De Persona</p>
+                      </div>
+                      <form novalidate name="form"  ngSubmit="onSubmit()" #f="ngForm">
+
+                          <div class="form-group">
+                            <label for="">Escriba su cedula : </label>
+                            <input name="identificacion" class="form-control" [(ngModel)]="persona.Identificacion" type="text" placeholder="1065775558" id="cedula" ngModel required>
+                        </div>
+                          <div class="form-group">
+                              <label for="">Escriba su nombre : </label>
+                              <input name="nombre" class="form-control" [(ngModel)]="persona.Nombres" type="text" placeholder="Juan manuel" id="nombre" ngModel required>
+                          </div>
+                          <div class="form-group">
+                              <label for="">Escriba sus apellidos : </label>
+                              <input name="nombre" class="form-control" [(ngModel)]="persona.Apellidos" type="text" placeholder="Juan manuel" id="nombre" ngModel required>
+                          </div>
+                          <div class="form-group">
+                              <label for="">Escriba la ciudad de residencia : </label>
+                              <input name="nombre" class="form-control" [(ngModel)]="persona.Ciudad " type="text" placeholder="Juan manuel" id="nombre" ngModel required>
+                          </div>
+                          <div class="form-group">
+                              <label for="">Sexo : </label>
+                              <select name="sexo" class="form-control" [(ngModel)]="persona.Sexo" id="sexo" ngModel required>
+                                  <option value="M">Masculino</option>
+                                  <option value="F">Femenino</option>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="">Escriba su edad : </label>
+                              <input name="edad" class="form-control" [(ngModel)]="persona.Edad" type="number" placeholder="18 " id="edad" ngModel required>
+                          </div>
+                          <div class="cabecera-formulario">
+                              <p>Datos del Apoyo</p>
+                          </div>
+                          <div class="form-group">
+                              <label for="">Digite el monto a donar : </label>
+                              <input name="apoyo" class="form-control" [(ngModel)]="persona.Donacion.ValorDonacion" type="number" placeholder="100000$" id="edad" ngModel required>
+                          </div>
+                          <div class="form-group">
+                              <label for="">Tipo de apoyo : </label>
+                              <select name="tipo-apoyo" class="form-control" [(ngModel)]="persona.Donacion.Modalidad" id="sexo" ngModel required>
+                                  <option value="Alimentario">Alimentario </option>
+                                  <option value="Economico">Economico</option>
+                              </select>
+                          </div>
+                          <button type="submit" class="btn btn-primary" (click) = " agregarPersona()" [disabled]="f.invalid"> Registrar Persona </button>
+                      </form>
+                  </div>
+              </div>
+          </article>
+          <div  class="col-md-2"></div>
+      </section>
+  </div>
+</div>
